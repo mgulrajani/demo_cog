@@ -1,25 +1,51 @@
-<form action="store.html" name="form1">
-
-    First Name :
-    <input 
-        type="text" 
-        name="firstname" 
-        id="firstname" 
-        placeholder="Enter first name"
-        required
-        autofocus
-        />
-    password
-    radio
-    checkbox
-    data list
-    date
-    color
-        <input type="submit" value="Register"/>
-
-
-</form>
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration form</title>
+</head>
+<body bgcolor="ivory">
+	<form name="form1" action="store.html" method="post">
+		<p>
+			<strong>Enter first name : <input name="username"><BR><br>
+			Enter lastname : &nbsp; <input maxlength="30"
+				name="surname"></strong>
+		</p>
+		<p>
+			<strong>Enter&nbsp; address :</strong>&nbsp;&nbsp;&nbsp;
+			<textarea name="addr" rows="3"></textarea>
+			<br>
+			<br> <strong>Select the training programs attended :</strong><input
+				type="checkbox" value="html" name="html">
+			Internet/HTML <input type="checkbox" checked value="JAVA"
+				name="java">java <input type="checkbox"
+				value="Javascript" name="dbms-sql"> Javascript
+		</p>
+		<p>
+			<strong>Select the stream you belong to :</strong> <input
+				type="radio" value="mech" name="s-grp"> MEch <input
+				type="radio" value="eee" name="s-grp"> EEE <input
+				type="radio" value="cse" name="s-grp"> cse <input
+				type="radio" value="it" name="it">Engineering
+		</p>
+		<b>Which training program would you like to attend ?</b> <select
+			multiple size="3" name="pref">
+			<option value="ih" selected>html
+			<option value="js">Javascript
+			<option value="oracle">Oracle
+			<option value="aws">aws
+			<option value="xm">XML
+			<option value="jv">JAVA
+			<option value="jsp">jsp</option>
+		</select> <br>
+		<br> <strong>upload your profile</strong> <input
+			type="file" size="15" name="fnm"> <br> <input
+			type="hidden" value="patni" name="coname"> <br> <input
+			type="button" value="exit" name="but"> <input type="submit"
+			value="save"> <input type="reset" value="reset">
+		
+	</form>
+</body>
+</html>
 
 
 
