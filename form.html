@@ -2,11 +2,12 @@
 <html>
 <head>
 <title>Registration form</title>
+
 </head>
 <body bgcolor="ivory">
 	<form name="form1" action="store.html" method="post">
 		<p>
-			<strong>Enter first name : <input name="username"><BR><br>
+			<strong>Enter first name : <input id="username" name="username"><BR><br>
 			Enter lastname : &nbsp; <input maxlength="30"
 				name="surname"></strong>
 		</p>
@@ -42,9 +43,10 @@
 			type="file" size="15" name="fnm"> <br> <input
 			type="hidden" value="myco" name="coname"> <br> <input
 			type="button" value="exit" name="but"> <input type="submit"
-			value="save"> <input type="reset" value="reset">
+			value="save" onclick="save()"> <input type="reset" value="reset">
 		
 	</form>
+	<script src="saveData.js"></script>
 </body>
 </html>
 

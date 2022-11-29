@@ -1,4 +1,6 @@
 var storage =  window.localStorage;
+
+
 storage.setItem('name','hetal');
 
 function disp(){
