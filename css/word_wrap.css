@@ -1,0 +1,20 @@
+
+.p1 {
+	color:rgba(155, 123, 71,.9);
+	width: 11em;
+	border: 1px solid #000000;
+}
+
+.p2 {
+	color: blue;
+	width: 11em;
+	border: 1px solid #00ff00;
+	word-wrap: normal;
+}
+
+.p3 {
+	color: green;
+	width: 11em;
+	border: 1px solid #000000;
+	word-wrap: break-word;
+}
