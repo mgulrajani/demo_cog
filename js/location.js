@@ -41,3 +41,6 @@ function  handleLocationError(err){
             break;   
     }
 }
+function updateStatus(msg){
+    console.log(msg);
+}

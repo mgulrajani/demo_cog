@@ -1,4 +1,12 @@
 var storage = window.localStorage;
+
+
+
+window.addEventListener("storage",f1);
+
+function f1(event){console.log("data stored in local storage");
+document.getElementById("msg1").innerHTML ="data stored";
+}
 function save(){
     //first form of the html document
 form1=document.forms[0];

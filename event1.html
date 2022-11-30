@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       // document.addEventListener('onmousemove',mouseMove);
+        function mouseMove(event){
+            var x = event.clientX;
+            var y = event.clientY;
+            document.getElementById("mouseCoords").innerHTML=`X ${x}  Y ${y}`;
+        }
+    </script>
+</head>
+<body onmousemove="mouseMove(event)">
+    
+
+    <!--id of mouseCoords should x and y coords-->
+    <p id="mouseCoords">some coords</p>
+
+    <p id="demo" ondblclick="dClick()">change  color.</p>
+
+
+    <p id="p1" onclick="change()"> this is a new one </p>
+
+    Enter your message : <input type="text" 
+    id="message" onfocus="focus()" onblur="blur1()"/>
+   
+
+    <h1 id="bigFont" onclick="blur(event)">A heading </h1>
+    <script>
+      function change(){ document.getElementById("p1").innerHTML="changed data";}
+       focus=()=>{console.log('in the function')}
+       function blur(event){
+          e.style.backgroundColor='yellow';
+
+       }
+
+       function blur1(){
+        document.getElementById("message").style.backgroundColor='green';
+       }
+
+ 
+function dClick() {
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.border = "1px solid green";
+  
+
+}
+</script>
+    </script>
+</body>
+</html>

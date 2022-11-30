@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Select one of the favourite fruit from the given list to display. </p>
+<select id="Choose" onchange="Func_a()">
+<option value="Chico">Chico
+<option value="Apple">Apple
+<option value="strawberry">Guava
+<option value="Pineapple">Pineapple
+</select>
+<p>Get one of the fruits to consume and then digest it.</p>
+<p id="demo1"></p>
+<script>
+function Func_a() {
+var fruit = document.getElementById("Choose").value;
+document.getElementById("demo1").innerHTML = "Selected  " + fruit;
+}
+</script>
+</body>
+</html>

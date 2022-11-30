@@ -8,7 +8,8 @@
 	<form name="form1" action="store.html" method="post">
 		<p>
 			<strong>Enter first name : 
-                <input id="username" name="username"><BR><br>
+                <input onblur="blur()" 
+				 onfocus="focus()" id="username" name="username"><BR><br>
 			Enter password : &nbsp; <input
             type="password"
             maxlength="30"
@@ -16,20 +17,19 @@
 		</p>
 			<input type='submit' value="save" onclick="save()"> 
 	</form>
+  <script>
 
-    <form>
+function blur(){
+	console.log('in the method blur')
+    document.getElementById("username").style.background="pink";
 
+}
+function focus(){
+	console.log('in focus event handler')
+	document.getElementById("username").style.background="green";
 
-
-    </form>
-
-    <form>
-
-
-
-
-        
-    </form>
+}
+  </script>
 	<script src="saveData.js"></script>
 </body>
 </html>
