@@ -1,0 +1,86 @@
+
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title> 
+            How to remove a table row
+            from table
+        </title> 
+          
+        <style>
+            #myCol {
+                background:green;
+            }
+            table {
+                color:white;
+            }
+            #Geek_p {
+                color:green;
+                font-size:30px;
+            }
+            td {
+                padding:10px;
+            }
+        </style>
+    </head> 
+          
+    <body> 
+        <center>
+        <h1 style = "color:green;" > 
+           Table
+        </h1> 
+              
+        <table id="data">
+            <colgroup>
+                <col id="myCol"
+                    span="3">
+                <col style="background-color:green">
+            </colgroup>
+  
+            <tr>
+                <th>S.No</th>
+                <th>Title</th>
+                <th>id</th>
+                <th>op</th>
+            </tr>
+            <tr id="tr1">
+                <td>data1</td>
+                <td>dat11</td>
+                <th>data_1</th>
+                <td><button style='background-color: red;' onclick = "Delete('tr1')"> 
+                    Delete
+                </button> </td>
+            </tr>
+            <tr id="tr2">
+                <td>data2</td>
+                <td>data22</td>
+                <th>data_2</th>
+                <td><button style='background-color: red;' onclick = "Delete('tr2')"> 
+                    Delete
+                </button> </td>
+            </tr>
+        </table>
+          
+        <br>
+          
+        <button onclick="delete_data()" id="b1" value="full delete">Full Delete</button>
+          
+        <script> 
+            function Delete(tr) {
+
+                document.getElementById(`${tr}`).remove();
+            }
+
+            function delete_data(){
+var table = document.getElementById("data");
+var rowCount = table.rows.length;
+for (var i=rowCount-1; i >=0; i--) {
+    table.deleteRow(i);
+   
+}
+document.getElementById("b1").remove();
+}
+        </script> 
+        </center>
+    </body> 
+</html> 

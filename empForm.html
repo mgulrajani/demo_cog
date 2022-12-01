@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.formData{
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background-color: teal;
+}
+form{
+    font-size: 30px;
+
+}
+form input{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.errorMessage{
+   background-color: white;
+   width: 200px;
+   padding :10px 10px;
+   margin : 1px 1px;
+   visibility: hidden;
+   border-radius: 10px;
+   position:relative;
+   float:left;
+
+
+}
+</style>
+
+<body>
+    <div class="formData">
+    <form name="empForm"   action="storeEmpData.html"  method="POST">
+
+    <label for="empId">Employee Id</label><br>
+    <input type="number" name="empId" required id="empId" /><br>
+
+    <label for="firstName">First Name</label><br>
+     <input type="text" name="firstName"  required id="firstName"><br>
+    
+     <label for="department">Department</label><br>
+    <input type="text" id="department" required name="department"/><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" required name="email"/><br>
+    
+    <label for="userName">UserName</label><br>
+    <input type="text" name="userName" minlength="4" maxlength="20" required id="userName"><br>
+  
+
+    <label for="password">Password</label><br>
+    <input type="password" name="password"  
+    
+    minlength="8" required id="password" 
+    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"><br>
+  
+    <input type="submit" value="submit" />
+    </form>
+ <p class="errorMessage"></p>
+    </div>
+</body>
+</html>
