@@ -1,0 +1,83 @@
+
+    <html>
+<head>
+<title>Hover in CSS</title>
+<link rel = "stylesheet" >
+</head>
+<style>
+    p::after{
+        content: '**';
+        color:brown;
+    }
+    ul li:last-child{
+        background-color: aquamarine;
+    }
+    body{
+        color:blue;
+    }
+    h1{
+
+        color:red;
+    }
+
+  p::first-line{
+    color:black;
+  }  
+p{
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: double;
+    background-color: lightpink;
+    color: green;
+    }
+    P:hover{
+    background-color: yellow;
+    font-style: normal;
+    color: black;
+    }
+    h1{
+    color:yellow;
+
+}
+div{writing-mode: vertical-lr;}
+.box {
+  background-image: url(images\kittens.jpg);
+  background-repeat: no-repeat;
+  background-position: 120px 1em;
+}
+    
+.a {
+  background-image: linear-gradient(105deg, rgba(0,249,255,1) 39%, rgba(51,56,57,1) 96%);
+}
+
+.b {
+  background-image: radial-gradient(circle, rgba(0,249,255,1) 39%, rgba(51,56,57,1) 96%);
+  background-size: 100px 50px;
+}
+    </style>
+
+<body>
+    <h1>this is a heading </h1>
+<h2> Hover  in CSS</h2>
+<p>TExt  will change when you hover over it!
+    today we are learning  css selectors 
+    Lorem ipsum dolor sit, amet consectetur . 
+    this is second line.
+    this is third line.
+    this is fourth line.
+    adipisicing elit. Assumenda laborum ea natus nihil ipsam aliquam dolorem quae. Perferendis eius voluptatem cumque adipisci. Nam officia explicabo amet reprehenderit, illum error ipsam?
+</p>
+
+<p>TExt  will change when you hover over it!
+    today we are learning  css selectors 
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda laborum ea natus nihil ipsam aliquam dolorem quae. Perferendis eius voluptatem cumque adipisci. Nam officia explicabo amet reprehenderit, illum error ipsam?
+</p>
+<div> this is a new para </div>
+
+<ul>
+    <li>data 1</li>
+    <li>data 2</li>
+    <li>data 3</li>
+</ul>
+</body>
+</html>

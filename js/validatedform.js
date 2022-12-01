@@ -40,7 +40,7 @@ function printError(elemId, hintMsg) {
     if(mobile == "") {
     printError("mobileErr", "Please enter mobile number");
     } else {
-    var regex = /^[7-9]{1}[0-9]\d{9,9}$/;
+    var regex = /^[7-9]{1}[0-9]{9,9}$/;
     if(regex.test(mobile) === false) {
     printError("mobileErr", "Please enter a valid mobile number");
     } else{
