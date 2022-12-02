@@ -25,3 +25,42 @@ h2{
     color:green;
     font-size: 2rem;
 }}
+
+body{
+
+margin:1;
+padding:0.5;
+font-family: 'Times New Roman', Times, serif;
+font-size: 1.5rem;
+
+}
+
+p{
+
+    padding:10px 12px;
+
+    margin:1px;
+    color:pink;
+}
+//variables are declared here 
+$roseColor:if(true,yellow,blue);
+$jasmineColor:if(false,papayawhip,darksalmon);
+$lotusColor:if(6>3,purple,aqua);
+p:nth-of-type(1){
+    background-color: $roseColor;
+    @if(lightness($roseColor) > 50%){
+         border:1px solid blue;
+    }
+    @else{
+
+        border:2px dashed deeppink;
+    }
+}
+
+p:nth-of-type(2){
+ @if 2+2==4 {background-color: $jasmineColor;}   
+ @if 6 >5 {border: 1px dotted $lotusColor;}
+ @if true{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+}
+
