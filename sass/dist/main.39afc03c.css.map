@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAEA;EACI,kBAHE","file":"main.39afc03c.css","sourceRoot":"..\\srcc","sourcesContent":["$red: red;\r\n\r\nbody{\r\n    background-color: $red;\r\n}"]}
