@@ -1,0 +1,16 @@
+$favColor:red;
+$size:40px;
+$titleColor:indigo;
+
+h3{
+    background-color: green;
+    font-size: $size;
+}
+
+p{
+    color:$titleColor;
+}
+
+a{
+    color: $titleColor;
+}
