@@ -1,0 +1,53 @@
+.c_gray {
+  background-color: gray;
+}
+
+.c_brown {
+  background-color: brown;
+}
+
+.c_plum {
+  background-color: plum;
+}
+
+.c_pink {
+  background-color: pink;
+}
+
+.c_gray {
+  background-color: gray;
+  color: black;
+}
+
+.c_brown {
+  background-color: brown;
+  color: yellow;
+}
+
+.c_plum {
+  background-color: plum;
+  color: darkviolet;
+}
+
+.c_pink {
+  background-color: pink;
+  color: green;
+}
+
+h1 {
+  border: 1px solid red;
+}
+
+h2 {
+  border: 2px dashed green;
+}
+
+h3 {
+  border: 2rem double black;
+}
+
+h4 {
+  border: 1.5rem dotted pink;
+}
+
+/*# sourceMappingURL=each.css.map */
