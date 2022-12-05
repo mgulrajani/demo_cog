@@ -1,0 +1,18 @@
+$col1:red;
+$col2:blue;
+
+
+@for $var from 1 through 4{
+
+    .p#{$var}{
+        padding: $var * 20px;
+        color:lighten(red,25%);
+        border:1px solid mix($col1,$col2,30%);
+        height: 4px *$var;
+    }
+}
+
+.c1{
+color:change-color($color: #000000,  $hue: 50%, $saturation: 10%, $lightness: 50%, $alpha: 1.0)
+
+}

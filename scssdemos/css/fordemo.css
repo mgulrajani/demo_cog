@@ -1,0 +1,33 @@
+.p1 {
+  padding: 20px;
+  color: #ff8080;
+  border: 1px solid #4d00b3;
+  height: 4px;
+}
+
+.p2 {
+  padding: 40px;
+  color: #ff8080;
+  border: 1px solid #4d00b3;
+  height: 8px;
+}
+
+.p3 {
+  padding: 60px;
+  color: #ff8080;
+  border: 1px solid #4d00b3;
+  height: 12px;
+}
+
+.p4 {
+  padding: 80px;
+  color: #ff8080;
+  border: 1px solid #4d00b3;
+  height: 16px;
+}
+
+.c1 {
+  color: #8c8873;
+}
+
+/*# sourceMappingURL=fordemo.css.map */

@@ -1,0 +1,16 @@
+$media_backgroundcolor: lavender;
+$media_color: #FF00FF;
+$media_fontsize: 22px;
+.styledemo {
+background-color: $media_backgroundcolor;
+color: $media_color;
+@media (max-width:600px) and (orientation: landscape){
+.styledemo {
+background-color: lightblue;
+border: 2px dotted grey;
+font-size: $media_fontsize;
+
+}
+img{width:400px;}
+}
+}

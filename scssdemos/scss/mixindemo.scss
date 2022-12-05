@@ -1,0 +1,28 @@
+@mixin colormix{
+    color:darkgreen;
+
+}
+
+@mixin colormix2{
+    color:#AF3445;
+}
+
+@mixin dynamicMixin($size,$style,$color){
+    border : $size $style $color;
+}
+.p1{
+
+    @include colormix;
+    background-color: bisque;
+
+    @include dynamicMixin(3px,solid ,orange );
+}
+
+.p2{
+    @include colormix;
+    background-color: #ff69;
+}
+
+h1{
+    @include colormix2()
+}

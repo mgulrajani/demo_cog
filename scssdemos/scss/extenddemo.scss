@@ -1,0 +1,31 @@
+.class1{
+
+    color:cyan;
+    border:1px solid black;
+}
+
+.class2{
+@extend .class1;
+background-color: red;
+
+}
+
+.class3{
+    font-size: 36px;
+    color:blueviolet;
+}
+
+
+p{
+
+    font-size: 24px;
+    @media (max-width:600px) {
+    
+      font-size:36px;
+      color:blue;
+      
+    }
+    
+    }
+    /*# sourceMappingURL=extenddemo.css.map */
+    

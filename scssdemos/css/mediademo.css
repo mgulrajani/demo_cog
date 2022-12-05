@@ -1,0 +1,16 @@
+.styledemo {
+  background-color: lavender;
+  color: #FF00FF;
+}
+@media (max-width: 600px) and (orientation: landscape) {
+  .styledemo .styledemo {
+    background-color: lightblue;
+    border: 2px dotted grey;
+    font-size: 22px;
+  }
+  .styledemo img {
+    width: 400px;
+  }
+}
+
+/*# sourceMappingURL=mediademo.css.map */
