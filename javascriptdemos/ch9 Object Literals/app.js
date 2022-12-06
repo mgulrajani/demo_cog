@@ -34,7 +34,10 @@ val =  person.getBirthYear();
 console.log(val);
 
 
-
+const employees=[
+    {id:112 ,name:'amit',salary:343444},
+    { id:113 ,name:'sunita',salary:334344},
+    { id:114,name:'anita',salary:343455 } ];
 const people = [
 
    { name:'meeta',age:23  },
