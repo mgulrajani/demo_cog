@@ -54,3 +54,50 @@ console.log(square(summ(3,4)));
 //create a regular function subtract (a,b)
 
 //function expression product 
+
+//IIFE --Immediately Invoked Function Expressions
+
+(function(){
+    console.log('ran a function immediately as soon as defined');
+})();
+
+
+(function(name){
+    console.log(`hello there ${name}`);
+})('Bobby');
+
+//whenever  you define function inside an object , it is a method
+//task objects -- addTask ,editTask
+const task ={
+
+    addTask:function(){
+        console.log('adding a task');
+    },
+
+    editTask:function(id){
+     console.log(`Editiing task with id ${id}` );
+    }
+
+
+}
+//If you  forget to add any functionality to the object , it can be added later on also
+//that can be done separately ,like this
+task.deleteTask=function(){
+    console.log('deleting a task ');
+}
+
+//invoking all the methods of task object
+
+task.addTask();
+task.editTask(121);
+task.deleteTask();
+
+//cart object 
+//addItem 
+//removeItem
+//checkOut
+
+//create cart object and create the add,remove and checkout 
+//invoke them
+
+
