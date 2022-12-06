@@ -7,11 +7,17 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="../css/fordemo.css">
+<script src="demo1.js"></script>
 <body>
 
-    <p class="p1">this is p1 with padding of 10px</p>
+    <p class="p1" onclick="onChange()">this is p1 with padding of 10px</p>
     <p class="p2">this is p1 with padding of 10px * 2</p>
     <p class="p3">this is p1 with padding of 10px * 3</p>
     <p class="p4">this is p1 with padding of 10px * 4</p>
+    <script>
+     function onChange(){
+        document.getElementById("p1").innerHTML="changed data";
+     }
+        </script>
 </body>
 </html>
