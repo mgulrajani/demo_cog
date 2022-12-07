@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+let loadfn=function(){
+ console.log('html page is fully loaded')
+};
+
+let unloadfn=function(){
+    console.log('before page unloads')
+};
+
+let unload1=function(){
+    console.log('on page unload');
+    
+}
+
+addEventListener('load',loadfn);
+
+addEventListener('beforeunload',unloadfn);
+
+addEventListener('onunload',unload1);
+</script>
+<body>
+<div>   
+    <h1>Event handling </h1>
+    <button id="btn" name="btn">Click</button>
+    
+    </div>
+
+    
+    <a id="a1" href="www.oracle.com">oracle home page</a>
+
+  <button id="btn2" name="btn2">Remove event handler</button>
+    <script src="app.js"></script>
+</body>
+
+</html>
