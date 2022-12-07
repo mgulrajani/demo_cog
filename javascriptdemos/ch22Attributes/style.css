@@ -1,0 +1,18 @@
+.p3{
+    color:blue;
+    text-align: center;
+    padding: 5px;
+    margin:3px;
+}
+
+
+.p4{
+
+    border: 1px solid pink;
+    background-color: green;
+}
+
+.p5{
+
+    text-shadow: 1px 3px 2px 4px red;
+}
