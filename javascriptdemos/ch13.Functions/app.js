@@ -75,7 +75,7 @@ const task ={
     },
 
     editTask:function(id){
-     console.log(`Editiing task with id ${id}` );
+     console.log(`Editing task with id ${id}` );
     }
 
 
@@ -100,4 +100,31 @@ task.deleteTask();
 //create cart object and create the add,remove and checkout 
 //invoke them
 
+
+function checkAge(age) {
+    if (age > 18) {
+      return true;
+    }
+ else{
+    return confirm('Did parents allow you?');
+  }}
+checkAge(17);
+
+
+function showPrimes(n) {
+
+    for (let i = 2; i < n; i++) {
+      if (!isPrime(i)) continue;
+  
+      console.log(i);  // a prime
+    }
+  }
+  
+  function isPrime(n) {
+    for (let i = 2; i < n; i++) {
+      if ( n % i == 0) return false;
+    }
+    return true;
+  }
+  showPrimes(100);
 
