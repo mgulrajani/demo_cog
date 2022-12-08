@@ -38,6 +38,31 @@ console.log(car2.id);
 console.log(car2.brand);
 
 
+class EV extends Car{
+
+    constructor(id,model,dealer,price,batterylife){
+       
+        //super keyword -- to invoke the constructor of the super class
+        
+       super(id,model,dealer,price);
+        
+    
+        this.batterylife  =batterylife;
+    }
+    
+    disp(){
+    
+        super.disp();
+        console.log(this.batterylife);
+    }
+    
+    }
+    
+let ev= new EV(111,'nexon','tata',1500000,400);
+
+ev.disp;
+
+
 class Button{
 
    constructor(val){
@@ -70,3 +95,5 @@ setTimeout(btnObj.click,1000);
 //constructor, get and set methods for its data members
 //create objects
 //display them
+
+//extends - keyword
