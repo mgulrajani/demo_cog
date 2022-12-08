@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        text-align: center;
+        background-color: cyan;
+
+    }
+   ul li{
+        text-decoration: none;
+    }
+</style>
 <body>
   <form  id="empForm">
     
@@ -17,12 +27,12 @@
 <br>
 <input type="submit" value="Add Emp">
 
-
-  </form>  
+<br><br>
+  </form>  <br>
   <input type="text" name="filter" id="filter">
   <label for="filter">Filter Emp</label>
-</div>
-<ul class="empList"></ul>
+</div><br><br>
+<ul id="empList"></ul>
 <a href="#" class="clear-tasks btn black">Delete Emps</a>
 <script src="app.js"></script>
 </body>
