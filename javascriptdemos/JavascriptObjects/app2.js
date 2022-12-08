@@ -45,12 +45,36 @@ class ElectricVehicle extends Car{
 }
 
 let tataNexon = new ElectricVehicle(111,'nexon','tata',1500000,400);
+let tesla = new ElectricVehicle(112,'premium','tesla',3000000,600);
+
+
+const cars=[tataNexon,tesla];
+let mahindra = new ElectricVehicle(1114,'sedan','mahindra',1800000,450);
+cars.push(mahindra);
+
 
 tataNexon.disp();
 
+
+let arr = [1,2,3,4,5];
+
+arr.push(6);
+
+arr.splice(3,2,8);
+console.log(arr);
+
+console.log(arr.pop());
+console.log(arr.shift());
+console.log(arr);
 
 // Manager -- department name 
 
 //emp  -id name dept  salary  project
 //manager extends emp --- years of experience
 
+
+console.log(cars);
+
+cars.splice(1,0,mahindra);
+
+console.log(cars);
