@@ -4,7 +4,7 @@ btn.addEventListener('click',loadData);
 
 function loadData(){
     //creating a xhr object
-    const xhr = new XMLHttpRequest();/
+    const xhr = new XMLHttpRequest();
 
     //open data.txt 
     xhr.open('GET','data.txt',true);

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>This is custom element demo</h1>
+
+    <my-element
+      style="border:1px solid red;background-color: yellow;"
+      message="this is the text of this element"></my-element> 
+
+
+      <my-element
+      style="background-color:green"
+      message="new element"></my-element>
+
+    <template id="mytemplate">This content will be rendered when js method is invoked to render its UI</template>
+    
+    <template id="mytemplate1">
+       <style>
+    
+       p{
+        color:red;
+        padding:5px;
+        text-align: center;
+
+       }
+       h1{
+         background-color: cyan;
+       }
+
+     
+       </style> 
+        
+        <h1>Company Name : </h1>
+       <p> this view is going to be attached to the component and will be rendered when shadowRoot appends child 
+       </p></template>
+       <!--we are using that custom element which we have defined with the template  attached to it-->
+       <my-template1></my-template1>
+    <script src="app.js"></script>
+</body>
+</html>
