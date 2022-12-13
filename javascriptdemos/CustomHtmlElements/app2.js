@@ -76,7 +76,7 @@ class Square extends HTMLElement {
   update.onclick = function() {
     // Randomly update square's attributes
     square.setAttribute('l', random(50, 200));
-    square.setAttribute('c', `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`);
+    square.setAttribute('c', `rgb(${random(100, 255)}, ${random(200, 255)}, ${random(120, 255)})`);
   };
   
   remove.onclick = function() {
