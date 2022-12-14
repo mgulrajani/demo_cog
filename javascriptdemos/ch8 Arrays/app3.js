@@ -86,3 +86,28 @@ console.log(sortByNames);
 //arr.some(num=>num>5)   -- 10 -- few even numbers some filter to check whethere are there few even number --true will be returned even if i am looking for even number if 1 found
 
 //arr.every(num=>num%2==0)  === true , 
+let emps=new Map();
+emps.set(amit,amit.batchCode);
+emps.set(nisha,nisha.batchCode);
+
+console.log(emps.get(nisha));
+
+emps.set(nisha,"fast track")
+    .set(tia,"java full stack")
+    .set(nikhil,"react ");
+console.log('displaying all the values of emps map')
+for(let batchCode  of emps.values()){
+    console.log(batchCode);
+
+}    
+console.log('displaying all the keys of emps map');
+for(let emp of emps.keys()){
+    console.log(emp);
+}
+
+
+console.log('displaying the entry set of emps map');
+for(let entrySet of emps){
+    console.log(entrySet);
+
+}
