@@ -2,11 +2,11 @@
 exports.__esModule = true;
 var Status;
 (function (Status) {
-    Status[Status["pending"] = 0] = "pending";
-    Status[Status["approvedByFinanceOfficer"] = 1] = "approvedByFinanceOfficer";
-    Status[Status["approvedByLandVerificationOfficer"] = 2] = "approvedByLandVerificationOfficer";
-    Status[Status["approvedByManager"] = 3] = "approvedByManager";
-    Status[Status["rejected"] = 4] = "rejected";
+    Status["pending"] = "pending";
+    Status["approvedByFinanceOfficer"] = "approvedByFinanceOfficer";
+    Status["approvedByLandVerificationOfficer"] = "approvedByLandVerificationOfficer";
+    Status["approvedByManager"] = "approvedByManager";
+    Status["rejected"] = "rejected";
 })(Status || (Status = {}));
 var loanApplication1;
 loanApplication1 = {
@@ -33,3 +33,64 @@ function checkStatus(loanApplication) {
     }
 }
 checkStatus(loanApplication1);
+//one object of Book
+var book1;
+book1 = {
+    id: 111,
+    title: 'tao of physics',
+    author: 'fritzof capra',
+    price: 500
+};
+var book2;
+book2 = {
+    id: 112,
+    title: 'Essentials of Typescript',
+    author: 'Keerthy',
+    price: 500
+};
+//declaration of array  -- books of type Book array
+var books = [];
+books = [book1, book2];
+//union type
+//we are essentially writing one method which is capable 
+//of taking different data types 
+function add(a, b) {
+    if (typeof a === 'number' && typeof b === 'number') {
+        return a + b;
+    }
+    if (typeof a === 'string' && typeof b === 'string') {
+        return a + b;
+    }
+    if (typeof a === 'boolean' && typeof b === 'boolean') {
+        if (a === true && b === true)
+            return true;
+        else
+            return false;
+    }
+    throw new Error('Parameters can be numbers ,strings or boolean');
+}
+console.log(add(1, 2));
+console.log(add(true, true));
+console.log(add('abc', 'abc'));
+console.log(add('abc', 'def'));
+function add2(a, b) {
+    return a + b;
+}
+console.log(add2(90, 90));
+console.log(add2('90', '90'));
+function sum() {
+    var nums = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        nums[_i] = arguments[_i];
+    }
+    //what is ...nums
+    //varargs --- variable number of args --rest operator in the function def
+    var total = 0; //logic to calc sum
+    //..nums ? what is it -- whatis the treatment to ...nums 
+    //
+    nums.forEach(function (e) { return total += e; });
+    console.log(total);
+}
+sum(1, 2, 3);
+sum(90, 78);
+sum(34, 45, 5, 65, 6, 56, 3);
