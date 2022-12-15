@@ -53,3 +53,7 @@ vr.disp();
 //create a class ShoppingCart which has map of product as key and number of items as value
 
 //write a method to calculate the cart's total price
+
+
+let map=new Map();
+map.set(p1,)
