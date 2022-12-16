@@ -31,6 +31,26 @@ describe("checking product service impl",function(){
     
   });
 
+
+  it("should find  product by id ",function(){
+    dao=new ProductDAO();
+    productService = new ProductService(dao);
+    console.log(dao);
+    console.log(productService);
+    product=new Product(111,'pen',200);
+
+//i am creating a spy on the dao object for which method addProduct and then what it should return product object
+    spyOn(dao,'findById').and.callFake(function(id){
+      if(id===111)
+      return product;
+      else
+      throw new Error('No such id');
+    })
+
+    expect(productService.findById(112)).toEqual(product);
+    
+  });
+
 });
 
 
@@ -75,3 +95,44 @@ it("function isPrime(num) should check if number is even",function(){
 
    
    });*/
+
+
+   //create  Student class with id,name,email 
+   //create StudentDAO 2 methods findAll -- which will return all studnets 
+   //create StudentService -- will have a dependency on StudentDAO
+   // findAll - dao.findAll
+   //delete -- callFake (id) 
+   //delete that id from array
+
+   //StudentSpec 
+
+   //array of students
+   //spy -findAll --return that array
+
+   //test service.findAll
+
+   /*
+
+
+   it("service findAll should list all the students ",
+   function(){
+
+    expect(service.findAll()).toMatch(studentArr);
+
+
+   })
+
+
+   it("should reduce the size of the student array by 1 ",
+   function(){
+     let size = studentArr.length;
+    expect(service.delete()).toEequal(size-1);
+
+
+   })
+
+
+
+   */
+
+

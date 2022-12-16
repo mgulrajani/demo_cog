@@ -14,6 +14,7 @@ class ProductDAO{
 
     addProduct=(p)=>{console.log('dao talking to db to insert product');}
     updateProduct=(p)=>{console.log('update happening')};
+    findById=(id)=>{console.log('not yet implemented');}
 }
 
 
@@ -36,6 +37,10 @@ class ProductService{
     updateProduct(p){
         return null;
     }
+    findById(id){
+
+        return this.dao.findById(id);
+    }
     
 }
 
@@ -43,3 +48,10 @@ class ProductService{
 
 module.exports={Product,ProductDAO,ProductService};
 
+
+//create class Shape -- numofsides length breadth
+//create class CreateShape ---- createShape(shape)
+//create class ColorShape -- dependency on CreateShape 
+//colorShape(invokes createShape of Create Shape )
+
+//you have to test ColorShape by spying CreateShape
