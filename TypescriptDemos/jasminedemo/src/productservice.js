@@ -1,3 +1,4 @@
+//representing the entity
 class Product{
    constructor(id,name,price){
     this.id=id;
@@ -6,12 +7,15 @@ class Product{
    }
 
 }
+
+//DAO --db -- file ,arraylist ,Nosql
 class ProductDAO{
     //dao is doing the low level talking to db or persistence mechanism
 
     addProduct=(p)=>{console.log('dao talking to db to insert product');}
     updateProduct=(p)=>{console.log('update happening')};
 }
+
 
 class ProductService{
  //service is dependent upon dao
@@ -26,7 +30,7 @@ class ProductService{
     }
     addProduct(p){
         
-        return null;
+        return this.dao.addProduct(p);
     }
   
     updateProduct(p){
@@ -37,4 +41,5 @@ class ProductService{
 
 
 
-module.exports=[Product,ProductService];
+module.exports={Product,ProductDAO,ProductService};
+
