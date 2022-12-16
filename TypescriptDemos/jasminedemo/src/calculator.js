@@ -1,7 +1,10 @@
  class Calculator{
   add=(a,b)=>{return a+b;};
 
-  sub=(a,b)=>{return 0;};
+  sub=(a,b)=>{
+    if (b < a)
+    throw new Error("first value should be smaller");
+    return a-b;};
 }
 
 

@@ -13,3 +13,6 @@ describe("testing greeting funciton",function(){
         expect(greeting()).toEqual('good ');
     });
 });
+
+
+//spy and stub

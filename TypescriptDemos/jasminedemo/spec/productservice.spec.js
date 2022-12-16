@@ -1,3 +1,4 @@
+let Product,ProductService = require('../src/productservice');
 //declaration is here
 let product;
 let productService;
@@ -9,11 +10,14 @@ beforeEach(function(){
 productService = new ProductService();
     
 });
-
-describe("checking product service impl",function(){
+//xdescribe will temporarily exclude suite from being tested
+//same signature as describe
+//marked as pending
+xdescribe("checking product service impl",function(){
 
 
     expect(productService.addProduct(product)).toEqual(product);
     
 
 })
+
