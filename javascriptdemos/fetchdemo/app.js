@@ -73,6 +73,6 @@ let _data = {
   //https://jsonplaceholder.typicode.com/posts --method delete 
   //complete coll delete from posts 
 
-  https://jsonplaceholder.typicode.com/posts/111
+  //https://jsonplaceholder.typicode.com/posts/111
   //deleteALlPost()
   //deleteById(111)
